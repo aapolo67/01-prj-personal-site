@@ -2,10 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student web developer portfolio.">
+  <title>Alex Morgan | Student Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header contains the site name and page navigation. -->
+  <header class="site-header">
+    <a class="logo" href="#top">AM<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-button" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- The hero introduces you and gives visitors a clear next step. -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Student web developer</p>
+        <h1>Ideas becoming <em>interactive.</em></h1>
+        <p class="hero-intro">I’m Alex, a curious beginner building thoughtful websites one project at a time.</p>
+        <a class="button" href="#projects">See my projects <span>↓</span></a>
+      </div>
+      <div class="hero-note">
+        <span>Currently learning</span>
+        <strong>HTML + CSS</strong>
+        <small>and enjoying the process</small>
+      </div>
+    </section>
+
+    <!-- This section gives visitors a short, friendly introduction. -->
+    <section id="about" class="about section-space">
+      <div class="section-label">01 / About me</div>
+      <div class="about-content">
+        <img src="img/me.png" alt="Portrait of Alex Morgan">
+        <div>
+          <h2>Learning in public,<br><span>building with purpose.</span></h2>
+          <p>I’m taking a web development course and learning how small details can make a big difference. My goal is to create clear, welcoming websites that are useful to real people.</p>
+          <p>When I’m away from my laptop, you’ll usually find me collecting inspiration, taking photos, or exploring a new coffee shop.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills stay simple while this portfolio grows. -->
+    <section id="skills" class="skills section-space">
+      <div class="section-label">02 / Skills</div>
+      <div class="skills-content">
+        <h2>Tools in my<br><span>learning kit.</span></h2>
+        <div class="skill-list">
+          <div class="skill"><span>01</span><strong>HTML</strong><small>Page structure</small></div>
+          <div class="skill"><span>02</span><strong>CSS</strong><small>Layouts & style</small></div>
+          <div class="skill"><span>03</span><strong>Design</strong><small>Ideas & visual details</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Replace these sample cards with real projects as you complete them. -->
+    <section id="projects" class="projects section-space">
+      <div class="section-label">03 / Selected work</div>
+      <div class="projects-heading">
+        <h2>Projects in<br><span>progress.</span></h2>
+        <p>A growing collection of experiments, assignments, and things I’m proud to make.</p>
+      </div>
+      <div class="project-list">
+        <article class="project-card project-card-featured">
+          <img src="img/laptop.jpg" alt="Laptop on a desk">
+          <div class="project-info"><p>Project 01 / Course assignment</p><h3>Personal website</h3><a href="#contact">Coming soon <span>↗</span></a></div>
+        </article>
+        <article class="project-card project-card-empty">
+          <div class="project-number">02</div>
+          <div class="project-info"><p>Next up</p><h3>Your next idea</h3><a href="#contact">Watch this space <span>↗</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- The footer makes it easy for visitors to get in touch. -->
+    <section id="contact" class="contact section-space">
+      <p class="eyebrow">Have a good idea?</p>
+      <h2>Let’s make something<br><em>worth visiting.</em></h2>
+      <a class="button button-light" href="mailto:hello@example.com">Say hello <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><span>© 2024 Alex Morgan</span><span>Made while learning on the web.</span></footer>
 </body>
 </html>
