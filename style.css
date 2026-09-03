@@ -240,8 +240,8 @@ h2 span {
   max-width: none;
   max-height: 750px;
   padding-top: 110px;
-  padding-left: max(32px, calc((100% - 1116px) / 2));
-  padding-right: max(32px, calc((100% - 1116px) / 2));
+  padding-left: max(48px, calc((100% - 1116px) / 2));
+  padding-right: max(48px, calc((100% - 1116px) / 2));
   scroll-margin-top: 8vh;
 }
 .skills-content h2 {
@@ -274,10 +274,21 @@ h2 span {
   width: 50px;
 }
 .skill strong {
+  align-items: center;
   color: white;
+  display: flex;
   font-size: 30px;
   font-weight: normal;
-  width: 38%;
+  white-space: nowrap;
+  width: 70%;
+}
+.skill i {
+  color: rgb(82, 65, 77);
+  flex-shrink: 0;
+  font-size: 30px;
+  margin-left: auto;
+  text-align: center;
+  width: 32px;
 }
 
 .projects-heading {
@@ -376,6 +387,21 @@ h2 span {
 .button-light {
   background: var(--cream);
   color: var(--dark-green);
+}
+.back-to-top {
+  align-items: center;
+  background: var(--gray);
+  border-radius: 20px;
+  bottom: 20px;
+  color: var(--cream);
+  display: flex;
+  font: bold 22px Arial, sans-serif;
+  height: 46px;
+  justify-content: center;
+  position: fixed;
+  right: 167px;
+  width: 46px;
+  z-index: 10;
 }
 footer {
   display: flex;
