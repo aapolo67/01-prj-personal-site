@@ -358,7 +358,9 @@ h2 span {
 }
 
 .contact {
-  background: var(--gray);
+  background: linear-gradient(var(--gray), rgba(71, 70, 96, 0.62)),
+    url("img/koi.jpg") 75% center/contain no-repeat, var(--paper);
+  background-blend-mode: normal, multiply;
   color: white;
   max-width: none;
   padding-left: max(32px, calc((100% - 1116px) / 2));
