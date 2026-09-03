@@ -27,7 +27,7 @@ body {
   line-height: 1.5;
 }
 a {
-  color: inherit;
+  color: var(--ink);
   text-decoration: none;
 }
 img {
@@ -193,7 +193,7 @@ h1 {
 .section-space {
   margin: auto;
   max-width: 1180px;
-  padding: 115px 32px;
+  padding: 150px 100px;
 }
 .section-label {
   border-top: 1px solid var(--line);
@@ -236,34 +236,46 @@ h2 span {
 }
 
 .skills {
-  background: var(--cream);
+  background: rgb(160, 158, 168);
   max-width: none;
+  max-height: 750px;
+  padding-top: 110px;
   padding-left: max(32px, calc((100% - 1116px) / 2));
   padding-right: max(32px, calc((100% - 1116px) / 2));
+  scroll-margin-top: 8vh;
 }
 .skills-content h2 {
   min-width: 40%;
+  color: white;
+}
+
+.skills-content h2 span {
+  color: var(--coral);
+}
+.skills .section-label {
+  border-top-color: var(--cream);
+  color: var(--cream);
 }
 .skill-list {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--cream);
   flex: 1;
 }
 .skill {
   align-items: center;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--cream);
   display: flex;
   padding: 22px 0;
 }
 .skill span {
-  color: var(--dark-green);
+  color: var(--cream);
   font:
     12x Arial,
     sans-serif;
   width: 50px;
 }
 .skill strong {
-  color: var(--dark-green);
-  font-size: 22.4px;
+  color: white;
+  font-size: 30px;
   font-weight: normal;
   width: 38%;
 }
@@ -271,6 +283,9 @@ h2 span {
 .projects-heading {
   align-items: end;
   justify-content: space-between;
+}
+.projects {
+  scroll-margin-top: -10vh;
 }
 .projects-heading p {
   font : arial, sans-serif;
@@ -282,7 +297,7 @@ h2 span {
 }
 .project-list {
   display: flex;
-  gap: 24px;
+  gap: 40px;
   margin-top: 45px;
 }
 .project-card {
@@ -343,18 +358,22 @@ h2 span {
 }
 
 .contact {
-  background: var(--dark-green);
+  background: var(--gray);
   color: white;
   max-width: none;
   padding-left: max(32px, calc((100% - 1116px) / 2));
   padding-right: max(32px, calc((100% - 1116px) / 2));
+  scroll-margin-top: -40vh;
+}
+.contact .eyebrow {
+  color: var(--coral);
 }
 .contact h2 {
   margin-bottom: 35px;
 }
 .button-light {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--cream);
+  color: var(--dark-green);
 }
 footer {
   display: flex;
@@ -390,7 +409,7 @@ footer {
     letter-spacing: -2px;
   }
   .section-space {
-    padding: 78px 20px;
+    padding: 100px 20px;
   }
   .about-content,
   .skills-content,
@@ -407,6 +426,9 @@ footer {
   .skills-content h2 {
     min-width: 0;
   }
+  .skills {
+    padding-top: 90px;
+  }
   .skill-list {
     margin-top: 35px;
   }
@@ -417,7 +439,7 @@ footer {
     margin-top: -15px;
   }
   .project-card {
-    margin-bottom: 24px;
+    margin-bottom: 36px;
     min-height: 380px;
   }
   footer {
